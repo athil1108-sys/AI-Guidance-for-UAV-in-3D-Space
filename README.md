@@ -51,6 +51,6 @@ python -m pytest tests/ -v
 - **Analytical Seeker**:
   $$\dot{\lambda} = \frac{r_x v_y - r_y v_x}{R^2}, \quad V_c = -\frac{\mathbf{r} \cdot \mathbf{v}}{R}$$
 - **PNG Guidance Law**:
-  $$A_{n,cmd} = N \cdot V_c \cdot \dot{\lambda} \quad (\text{saturated to } \pm A_{n,max})$$
+  $$A_{n,\text{cmd}} = N \cdot V_c \cdot \dot{\lambda} \quad (\text{saturated to } \pm A_{n,\text{max}})$$
 - **Point of Closest Approach (CPA) Interpolation**:
-  $$t_{cpa} = \text{clamp}\left(-\frac{\mathbf{r} \cdot \mathbf{v}}{\|\mathbf{v}\|^2}, 0, dt\right), \quad \text{miss\_distance} = \|\mathbf{r} + \mathbf{v} \cdot t_{cpa}\|$$
+  $$t_{\text{cpa}} = \text{clamp}\left(-\frac{\mathbf{r} \cdot \mathbf{v}}{\|\mathbf{v}\|^2}, 0, dt\right), \quad d_{\text{miss}} = \|\mathbf{r} + \mathbf{v} \cdot t_{\text{cpa}}\|$$
