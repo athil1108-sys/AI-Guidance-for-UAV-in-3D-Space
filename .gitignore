@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest & Caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated images & visual artifacts
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
